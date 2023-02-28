@@ -10,12 +10,16 @@ const SECRET_KEY = process.env.SECRET_KEY || "secret-dev";
 const PORT = +process.env.PORT || 3001;
 
 // Use dev database, testing database, or via env var, production database
-let DB_URI = `postgresql://`;
+const DB_URI = process.env.INTERNAL_DATABASE_URI;
+
+// function getDatabaseUri() {
+//   return (process.env.NODE_ENV === "test")
+//       ? `${DB_URI}postgres:admin@localhost:5432/wishlist_test`
+//       : process.env.DATABASE_URL || `${DB_URI}postgres:admin@localhost:5432/wishlist`;
+// }
 
 function getDatabaseUri() {
-  return (process.env.NODE_ENV === "test")
-      ? `${DB_URI}postgres:admin@localhost:5432/wishlist_test`
-      : process.env.DATABASE_URL || `${DB_URI}postgres:admin@localhost:5432/wishlist`;
+  return process.env.DATABASE_URL || DB_URI;
 }
 
 // Speed up bcrypt during tests, since the algorithm safety isn't being tested
