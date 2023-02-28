@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+      "username",
+      "password",
+      "firstName",
+      "lastName"
+  ],
+  "properties": {
+      "username": {
+          "type": "string",
+          "default": "",
+          "title": "The username Schema",
+          "examples": [
+              "parishilton"
+          ]
+      },
+      "password": {
+          "type": "string",
+          "default": "",
+          "title": "The password Schema",
+          "examples": [
+              "password11"
+          ]
+      },
+      "firstName": {
+          "type": "string",
+          "default": "",
+          "title": "The firstName Schema",
+          "examples": [
+              "Paris"
+          ]
+      },
+      "lastName": {
+          "type": "string",
+          "default": "",
+          "title": "The lastName Schema",
+          "examples": [
+              "Hilton"
+          ]
+      },
+      "profilePic": {
+          "type": "string",
+          "default": "",
+          "title": "The profilePic Schema",
+          "examples": [
+              "https://womenintheworld.org/wp-content/uploads/2021/03/Paris-Hilton.jpg"
+          ]
+      }
+  },
+  "examples": [{
+      "username": "parishilton",
+      "password": "password11",
+      "firstName": "Paris",
+      "lastName": "Hilton",
+      "profilePic": "https://womenintheworld.org/wp-content/uploads/2021/03/Paris-Hilton.jpg"
+  }]
+}

@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "Gourmia 5qt 12-Function Guided Cook Digital Air Fryer"
+            ]
+        },
+        "price": {
+            "type": "number",
+            "default": 0.0,
+            "title": "The price Schema",
+            "examples": [
+                39.99
+            ]
+        },
+        "description": {
+            "type": "string",
+            "default": "",
+            "title": "The description Schema",
+            "examples": [
+                "Fry Force 360° Technology cooks food quickly and evenly with little to no oil"
+            ]
+        },
+        "link": {
+            "type": "string",
+            "default": "",
+            "title": "The link Schema",
+            "examples": [
+                "https://www.target.com/p/gourmia-5qt-12-function-guided-cook-digital-air-fryer-black/-/A-80137210"
+            ]
+        },
+        "imageLink": {
+            "type": "string",
+            "default": "",
+            "title": "The imageLink Schema",
+            "examples": [
+                "https://target.scene7.com/is/image/Target/GUEST_640cc90c-70cc-4d66-9918-b919527263b5?wid=253\u0026hei=253\u0026qlt=80\u0026fmt=pjpeg"
+            ]
+        },
+        "category": {
+            "type": "string",
+            "default": "",
+            "title": "The category Schema",
+            "examples": [
+                "electronics"
+            ]
+        }
+    },
+    "examples": [{
+        "name": "Gourmia 5qt 12-Function Guided Cook Digital Air Fryer",
+        "price": 39.99,
+        "description": "Fry Force 360° Technology cooks food quickly and evenly with little to no oil",
+        "link": "https://www.target.com/p/gourmia-5qt-12-function-guided-cook-digital-air-fryer-black/-/A-80137210",
+        "imageLink": "https://target.scene7.com/is/image/Target/GUEST_640cc90c-70cc-4d66-9918-b919527263b5?wid=253\u0026hei=253\u0026qlt=80\u0026fmt=pjpeg",
+        "category": "electronics"
+    }]
+}
